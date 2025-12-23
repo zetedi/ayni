@@ -46,6 +46,7 @@ const Navbar: React.FC = () => {
                 <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
                 <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
                 <Link to="/events" className={linkClass('/events')}>{t('nav', 'events')}</Link>
+                <Link to="/food" className={linkClass('/food')}>{t('nav', 'food')}</Link>
                 <Link to="/temple" className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
                 <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
                 <Link to="/profile" className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
@@ -107,6 +108,7 @@ const Navbar: React.FC = () => {
             <Link to="/" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'home')}</Link>
             <Link to="/activities" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'activities')}</Link>
             <Link to="/events" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'events')}</Link>
+            <Link to="/food" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'food')}</Link>
             <Link to="/temple" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'temple')}</Link>
             <Link to="/shop" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'shop')}</Link>
             <Link to="/profile" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'profile')}</Link>

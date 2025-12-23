@@ -9,6 +9,7 @@ import Shop from './pages/Shop';
 import Activities from './pages/Activities';
 import Temple from './pages/Temple';
 import Events from './pages/Events';
+import Food from './pages/Food';
 
 const App: React.FC = () => {
   return (
@@ -24,6 +25,7 @@ const App: React.FC = () => {
               <Route path="/activities" element={<Activities />} />
               <Route path="/events" element={<Events />} />
               <Route path="/temple" element={<Temple />} />
+              <Route path="/food" element={<Food />} />
               <Route path="*" element={<Navigate to="/" replace />} />
             </Routes>
           </main>

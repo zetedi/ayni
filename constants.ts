@@ -25,6 +25,7 @@ export const TRANSLATIONS = {
       activities: 'Activities',
       events: 'Events',
       temple: 'Temple',
+      food: 'Food',
       login: 'Login'
     },
     values: {
@@ -95,6 +96,23 @@ export const TRANSLATIONS = {
             garden: { title: 'Sanctuary Gardens', desc: 'Open spaces to breathe under the stars of the Sacred Valley.' }
         }
     },
+    food: {
+      title: 'Healthy food made with love',
+      subtitle: 'At Ayni Sanctuary, food is ceremony.',
+      featured: {
+        tag: 'Nourishment',
+        title: 'Conscious Cuisine',
+        p1: 'Our dining experience centers on fresh, locally sourced ingredients prepared with intention, transforming each meal into nourishment for both body and spirit. Whether you’re attending a retreat, hosting an event, or enjoying a personal stay, our kitchen offers custom menus that support your journey, detoxifying, energizing, grounding, or comforting.',
+        p2: 'We honor all dietary needs with vegan, vegetarian, gluten-free, dairy-free, and allergen-sensitive options, as well as balanced omnivorous dishes. Guests can dine in the Lodge or outdoors with mountain views, sharing meals that foster connection, gratitude, and wellbeing.',
+        btn: 'View Sample Menu'
+      },
+      features: {
+        local: { title: 'Locally Sourced', desc: 'Fresh ingredients sourced directly from local Sacred Valley farmers.' },
+        dietary: { title: 'Dietary Inclusive', desc: 'Vegan, gluten-free, and allergen-sensitive options prepared with care.' },
+        intention: { title: 'Prepared with Intention', desc: 'Transforming each meal into nourishment for both body and spirit.' },
+        community: { title: 'Community Dining', desc: 'Sharing meals that foster connection, gratitude, and wellbeing.' }
+      }
+    },
     temple: {
       title: 'Ayni Temple',
       subtitle: 'A sacred space for contemplation, ceremony, and connection.',
@@ -139,6 +157,7 @@ export const TRANSLATIONS = {
       activities: 'Actividades',
       events: 'Eventos',
       temple: 'Templo',
+      food: 'Comida',
       login: 'Entrar'
     },
     values: {
@@ -209,6 +228,23 @@ export const TRANSLATIONS = {
             garden: { title: 'Jardines del Santuario', desc: 'Espacios abiertos para respirar bajo las estrellas del Valle Sagrado.' }
         }
     },
+    food: {
+      title: 'Comida saludable hecha con amor',
+      subtitle: 'En el Santuario Ayni, la comida es ceremonia.',
+      featured: {
+        tag: 'Nutrición',
+        title: 'Cocina Consciente',
+        p1: 'Nuestra experiencia gastronómica se centra en ingredientes frescos y locales preparados con intención, transformando cada comida en nutrición tanto para el cuerpo como para el espíritu. Ya sea que asista a un retiro, organice un evento o disfrute de una estadía personal, nuestra cocina ofrece menús personalizados que apoyan su viaje, desintoxicando, energizando, conectando con la tierra o reconfortando.',
+        p2: 'Honramos todas las necesidades dietéticas con opciones veganas, vegetarianas, sin gluten, sin lácteos y sensibles a los alérgenos, así como platos omnívoros equilibrados. Los huéspedes pueden cenar en el Lodge o al aire libre con vistas a la montaña, compartiendo comidas que fomentan la conexión, la gratitud y el bienestar.',
+        btn: 'Ver Menú de Muestra'
+      },
+      features: {
+        local: { title: 'Origen Local', desc: 'Ingredientes frescos obtenidos directamente de agricultores locales del Valle Sagrado.' },
+        dietary: { title: 'Dieta Inclusiva', desc: 'Opciones veganas, sin gluten y sensibles a alérgenos preparadas con cuidado.' },
+        intention: { title: 'Preparado con Intención', desc: 'Transformando cada comida en nutrición tanto para el cuerpo como para el espíritu.' },
+        community: { title: 'Comida en Comunidad', desc: 'Compartir comidas que fomentan la conexión, la gratitud y el bienestar.' }
+      }
+    },
     temple: {
       title: 'El Templo Ayni',
       subtitle: 'Un espacio sagrado para la contemplación, la ceremonia y la conexión.',
@@ -253,6 +289,7 @@ export const TRANSLATIONS = {
       activities: 'Ruraykuna',
       events: 'Raymikuna',
       temple: 'Willka Wasi',
+      food: 'Mikhuna',
       login: 'Yaykuy'
     },
     values: {
@@ -322,6 +359,23 @@ export const TRANSLATIONS = {
             ukhu: { title: 'Ukhu Temple', desc: 'Samana wasi, qasi kayta, hampi takita tarinapaq.' },
             garden: { title: 'Santuario Muya', desc: 'Ch\'askakunata qhawanapaq kichasqa pacha.' }
         }
+    },
+    food: {
+      title: 'Allin mikhuna munaywan rurasqa',
+      subtitle: 'Ayni Sanctuarypi, mikhuyqa huk raymim.',
+      featured: {
+        tag: 'Kawsay',
+        title: 'Munay Mikhuna',
+        p1: 'Ñuqaykupa mikhunaykuqa musuq, kay pachamanta rurasqa. Sapa mikhuyqa cuerpota nunatawan kallpachan.',
+        p2: 'Tukuy laya mikhuytam rurayku: vegano, vegetariano, mana glutenyuq. Huñunakuspa, urqukunata qhawaspa mikhusunchik.',
+        btn: 'Qhaway Mikhunata'
+      },
+      features: {
+        local: { title: 'Kay Pachamanta', desc: 'Valle Sagrado chakrakunamanta musuq mikhuykuna.' },
+        dietary: { title: 'Tukuy Laya', desc: 'Vegano, mana glutenyuq mikhuykuna k\'achalla rurasqa.' },
+        intention: { title: 'Munaywan Rurasqa', desc: 'Mikhuyqa cuerpota nunatawan kallpachan.' },
+        community: { title: 'Ayllu Mikhuy', desc: 'Kuska mikhuspa, sunqunchikta t\'ikarichisun.' }
+      }
     },
     temple: {
       title: 'Ayni Willka Wasi',
