@@ -23,6 +23,7 @@ export const TRANSLATIONS = {
       profile: 'Profile',
       shop: 'Shop',
       activities: 'Activities',
+      events: 'Events',
       temple: 'Temple',
       login: 'Login'
     },
@@ -73,6 +74,27 @@ export const TRANSLATIONS = {
         volunteer: { title: 'Volunteer Program', desc: 'Hands-on opportunities to serve with Love and Presence in our daily operations.' }
       }
     },
+    events: {
+        title: 'Events & Gatherings',
+        subtitle: 'Celebrate with us in sacred space and community.',
+        zonesTitle: 'Event Zones',
+        zonesText: 'Experience the flow of energy across our dedicated spaces.',
+        featured: {
+            tag: 'New Year\'s Eve',
+            title: 'Ecstatic Dance Festival',
+            subtitle: 'Featuring Liquid Bloom, Calagna, and many more.',
+            p1: 'Hosted at Ayni Sanctuary in Peru’s Sacred Valley, Casa de Oso presents an epic New Year’s Eve ecstatic dance festival featuring international artists, DJs, and musicians dedicated to community-centered celebration. As the hosting venue, Ayni Sanctuary is honored to hold this gathering in a safe, alcohol-free environment that supports free movement, genuine connection, and full self-expression.',
+            p2: 'The experience unfolds across two immersive dance floors — Condor Shala and Puma Hall — each offering a distinct sonic journey, alongside Ukhu Temple, an acoustic tea space for rest, warmth, and gentle sound. As music and movement carry us into the new year, we gather to celebrate renewal in a space rooted in care, creativity, and conscious community in the Sacred Valley of Peru.',
+            cta: 'Come as you are. Dance as you feel.',
+            btn: 'Tickets via Casa de Oso'
+        },
+        zones: {
+            condor: { title: 'Condor Shala', desc: 'An immersive dance floor offering a distinct sonic journey elevating the spirit.' },
+            puma: { title: 'Puma Hall', desc: 'A grounded space for movement, connecting us deeply to the rhythm of the earth.' },
+            ukhu: { title: 'Ukhu Temple', desc: 'An acoustic tea space for rest, warmth, and gentle sound healing.' },
+            garden: { title: 'Sanctuary Gardens', desc: 'Open spaces to breathe under the stars of the Sacred Valley.' }
+        }
+    },
     temple: {
       title: 'Ayni Temple',
       subtitle: 'A sacred space for contemplation, ceremony, and connection.',
@@ -115,6 +137,7 @@ export const TRANSLATIONS = {
       profile: 'Perfil',
       shop: 'Tienda',
       activities: 'Actividades',
+      events: 'Eventos',
       temple: 'Templo',
       login: 'Entrar'
     },
@@ -165,6 +188,27 @@ export const TRANSLATIONS = {
         volunteer: { title: 'Programa de Voluntariado', desc: 'Oportunidades prácticas para servir con Amor y Presencia en nuestras operaciones diarias.' }
       }
     },
+    events: {
+        title: 'Eventos y Reuniones',
+        subtitle: 'Celebra con nosotros en espacio sagrado y comunidad.',
+        zonesTitle: 'Zonas del Evento',
+        zonesText: 'Experimenta el flujo de energía a través de nuestros espacios dedicados.',
+        featured: {
+            tag: 'Año Nuevo',
+            title: 'Festival de Danza Extática',
+            subtitle: 'Con Liquid Bloom, Calagna y muchos más.',
+            p1: 'Organizado en el Santuario Ayni en el Valle Sagrado de Perú, Casa de Oso presenta un épico festival de danza extática de Nochevieja con artistas internacionales, DJs y músicos dedicados a la celebración centrada en la comunidad. Como sede anfitriona, Ayni Sanctuary tiene el honor de celebrar esta reunión en un ambiente seguro y libre de alcohol que apoya el movimiento libre, la conexión genuina y la plena autoexpresión.',
+            p2: 'La experiencia se desarrolla en dos pistas de baile inmersivas: Condor Shala y Puma Hall, cada una ofreciendo un viaje sonoro distinto, junto con el Templo Ukhu, un espacio acústico de té para el descanso, la calidez y el sonido suave. A medida que la música y el movimiento nos llevan al nuevo año, nos reunimos para celebrar la renovación en un espacio arraigado en el cuidado, la creatividad y la comunidad consciente en el Valle Sagrado de Perú.',
+            cta: 'Ven como eres. Baila como te sientes.',
+            btn: 'Entradas vía Casa de Oso'
+        },
+        zones: {
+            condor: { title: 'Condor Shala', desc: 'Una pista de baile inmersiva que ofrece un viaje sonoro distinto elevando el espíritu.' },
+            puma: { title: 'Puma Hall', desc: 'Un espacio conectado a tierra para el movimiento, conectándonos profundamente con el ritmo de la tierra.' },
+            ukhu: { title: 'Templo Ukhu', desc: 'Un espacio acústico de té para el descanso, la calidez y la curación con sonido suave.' },
+            garden: { title: 'Jardines del Santuario', desc: 'Espacios abiertos para respirar bajo las estrellas del Valle Sagrado.' }
+        }
+    },
     temple: {
       title: 'El Templo Ayni',
       subtitle: 'Un espacio sagrado para la contemplación, la ceremonia y la conexión.',
@@ -207,6 +251,7 @@ export const TRANSLATIONS = {
       profile: 'Runa',
       shop: 'Qhatu',
       activities: 'Ruraykuna',
+      events: 'Raymikuna',
       temple: 'Willka Wasi',
       login: 'Yaykuy'
     },
@@ -256,6 +301,27 @@ export const TRANSLATIONS = {
         partnerships: { title: 'Masichakuy', desc: 'Huk tantanakuykunawan yanapanakuy.' },
         volunteer: { title: 'Maki Puririchiy', desc: 'Sunquwan llamk\'ay sapa p\'unchaw ruraykunapi.' }
       }
+    },
+    events: {
+        title: 'Raymikuna & Huñunakuykuna',
+        subtitle: 'Ñuqaykuwan raymichay ch\'uya pachapi.',
+        zonesTitle: 'Raymi Suyukuna',
+        zonesText: 'Kawsay kallpata riqsiy kay suyukunapi.',
+        featured: {
+            tag: 'Musuq Wata',
+            title: 'Tusuy Raymi',
+            subtitle: 'Liquid Bloom, Calagna, huk takiqkunawan.',
+            p1: 'Ayni Sanctuarypi, Valle Sagradopi, Casa de Oso rikuchin hatun Musuq Wata tusuy raymita. Kaypiqa allin takiqkuna, DJkuna ima hamunquku. Ayni Sanctuaryqa kay hatun huñunakuyta chaskikun sunquwan, mana machaywan, libre kawsaywan.',
+            p2: 'Iskay hatun tusuna wasi kanqa: Condor Shala, Puma Hall ima. Chaymanta Ukhu Temple kanqa, samana wasi, upyana wasi, qasi kayta tarinapaq. Takiwan tusuywan musuq wataman yaykusun.',
+            cta: 'Imayna kanki chay hina hamuy. Munayniyki hina tusuy.',
+            btn: 'Entradas Casa de Osopi'
+        },
+        zones: {
+            condor: { title: 'Condor Shala', desc: 'Tusuna wasi, sumaq takiwan nunanchikta uqarinapaq.' },
+            puma: { title: 'Puma Hall', desc: 'Pachamamawan tinkunapaq tusuna wasi.' },
+            ukhu: { title: 'Ukhu Temple', desc: 'Samana wasi, qasi kayta, hampi takita tarinapaq.' },
+            garden: { title: 'Santuario Muya', desc: 'Ch\'askakunata qhawanapaq kichasqa pacha.' }
+        }
     },
     temple: {
       title: 'Ayni Willka Wasi',
