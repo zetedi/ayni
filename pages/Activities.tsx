@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Handshake, Heart, Sprout, Users } from 'lucide-react';
+import { Handshake, Heart, Sprout, Users, Mountain, Droplets, Layers, Footprints, Star, MapPin } from 'lucide-react';
 
 const Activities: React.FC = () => {
   const { t } = useLanguage();
@@ -25,6 +25,39 @@ const Activities: React.FC = () => {
       icon: <Heart className="w-8 h-8 text-oxblood" />,
       title: t('activities', 'types.volunteer.title'),
       description: t('activities', 'types.volunteer.desc')
+    }
+  ];
+
+  const excursions = [
+    {
+      icon: <Mountain className="w-8 h-8 text-honey" />,
+      title: t('activities', 'items.pitusiray.title'),
+      description: t('activities', 'items.pitusiray.desc')
+    },
+    {
+      icon: <Droplets className="w-8 h-8 text-chartreuse" />,
+      title: t('activities', 'items.urco.title'),
+      description: t('activities', 'items.urco.desc')
+    },
+    {
+      icon: <Layers className="w-8 h-8 text-oxblood" />,
+      title: t('activities', 'items.chinchero.title'),
+      description: t('activities', 'items.chinchero.desc')
+    },
+    {
+      icon: <Footprints className="w-8 h-8 text-turf" />,
+      title: t('activities', 'items.huchuy.title'),
+      description: t('activities', 'items.huchuy.desc')
+    },
+    {
+      icon: <Star className="w-8 h-8 text-honey" />,
+      title: t('activities', 'items.pisac.title'),
+      description: t('activities', 'items.pisac.desc')
+    },
+    {
+      icon: <MapPin className="w-8 h-8 text-shadow" />,
+      title: t('activities', 'items.ollantaytambo.title'),
+      description: t('activities', 'items.ollantaytambo.desc')
     }
   ];
 
@@ -95,6 +128,30 @@ const Activities: React.FC = () => {
                             <h3 className="text-xl font-bold text-shadow mb-2">{collab.title}</h3>
                             <p className="text-gray-600 text-sm leading-relaxed">
                                 {collab.description}
+                            </p>
+                        </div>
+                    ))}
+                </div>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            {/* Sacred Sites & Excursions Grid */}
+            <div className="p-8 lg:p-12">
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl font-serif font-bold text-shadow mb-4">{t('activities', 'excursionsTitle')}</h2>
+                    <p className="text-gray-600 font-medium max-w-2xl mx-auto">{t('activities', 'excursionsSubtitle')}</p>
+                </div>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {excursions.map((item, index) => (
+                        <div key={index} className="flex flex-col items-center text-center p-6 rounded-xl border border-gray-100 hover:shadow-xl transition-all duration-300 bg-white group shadow-sm">
+                             <div className="mb-4 bg-gray-50 w-20 h-20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-sm">
+                                {item.icon}
+                            </div>
+                            <h3 className="text-xl font-bold text-shadow mb-3">{item.title}</h3>
+                            <p className="text-gray-600 text-sm leading-relaxed">
+                                {item.description}
                             </p>
                         </div>
                     ))}

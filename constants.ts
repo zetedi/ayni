@@ -62,6 +62,8 @@ export const TRANSLATIONS = {
       subtitle: 'Join us in our mission to bring light to the world through various initiatives.',
       collabTitle: 'Ways to Collaborate',
       collabText: 'We offer various paths for collaboration including volunteering, donations, and community partnerships.',
+      excursionsTitle: 'Sacred Sites & Excursions',
+      excursionsSubtitle: 'Discover the profound energy of the Sacred Valley through these guided experiences.',
       featured: {
         tag: 'Featured Initiative',
         title: 'The Ayni Circle',
@@ -73,6 +75,32 @@ export const TRANSLATIONS = {
         sustainable: { title: 'Sustainable Projects', desc: 'Building long-term infrastructure for sovereignty and prosperity in under-served regions.' },
         partnerships: { title: 'Partnerships', desc: 'Strategic alliances with other organizations that share our vision of Integrity and Honor.' },
         volunteer: { title: 'Volunteer Program', desc: 'Hands-on opportunities to serve with Love and Presence in our daily operations.' }
+      },
+      items: {
+        pitusiray: {
+          title: 'Apu Pitusiray & Lake Qan Qan',
+          desc: 'Mountain of wisdom and protection. Serene lakeside space ideal for meditation, ceremony, and reflection.'
+        },
+        urco: {
+          title: 'Urco – Temple of Water',
+          desc: 'Nearby Incan ceremonial site dedicated to water and fertility. Flowing channels for purification, renewal, and gratitude.'
+        },
+        chinchero: {
+          title: 'Chinchero, Moray & Maras Salt Mines',
+          desc: 'Moray’s ancient agricultural terraces. Maras’ pre-Incan salt pools. Chinchero’s traditional weaving and living culture.'
+        },
+        huchuy: {
+          title: 'Huchuy Qosqo (Little Cusco)',
+          desc: 'Gentle trek to an ancient Incan royal estate. Panoramic views, Incan terraces, and a strong historical presence.'
+        },
+        pisac: {
+          title: 'Pisac & Ancient Citadel',
+          desc: 'Star-aligned ceremonial temples. Artisan market with sacred crafts, textiles, and instruments.'
+        },
+        ollantaytambo: {
+          title: 'Ollantaytambo & Gateway to Machu Picchu',
+          desc: '“Living Inca City” with potent energetic architecture. Starting point for travel to Aguas Calientes and Machu Picchu.'
+        }
       }
     },
     events: {
@@ -194,6 +222,8 @@ export const TRANSLATIONS = {
       subtitle: 'Únete a nuestra misión de traer luz al mundo a través de diversas iniciativas.',
       collabTitle: 'Formas de Colaborar',
       collabText: 'Ofrecemos varios caminos para la colaboración, incluyendo voluntariado, donaciones y asociaciones comunitarias.',
+      excursionsTitle: 'Sitios Sagrados y Excursiones',
+      excursionsSubtitle: 'Descubre la profunda energía del Valle Sagrado a través de estas experiencias guiadas.',
       featured: {
         tag: 'Iniciativa Destacada',
         title: 'El Círculo Ayni',
@@ -205,6 +235,32 @@ export const TRANSLATIONS = {
         sustainable: { title: 'Proyectos Sostenibles', desc: 'Construcción de infraestructura a largo plazo para la soberanía y la prosperidad en regiones desatendidas.' },
         partnerships: { title: 'Alianzas', desc: 'Alianzas estratégicas con otras organizaciones que comparten nuestra visión de Integridad y Honor.' },
         volunteer: { title: 'Programa de Voluntariado', desc: 'Oportunidades prácticas para servir con Amor y Presencia en nuestras operaciones diarias.' }
+      },
+      items: {
+        pitusiray: {
+          title: 'Apu Pitusiray & Lake Qan Qan',
+          desc: 'Mountain of wisdom and protection. Serene lakeside space ideal for meditation, ceremony, and reflection.'
+        },
+        urco: {
+          title: 'Urco – Temple of Water',
+          desc: 'Nearby Incan ceremonial site dedicated to water and fertility. Flowing channels for purification, renewal, and gratitude.'
+        },
+        chinchero: {
+          title: 'Chinchero, Moray & Maras Salt Mines',
+          desc: 'Moray’s ancient agricultural terraces. Maras’ pre-Incan salt pools. Chinchero’s traditional weaving and living culture.'
+        },
+        huchuy: {
+          title: 'Huchuy Qosqo (Little Cusco)',
+          desc: 'Gentle trek to an ancient Incan royal estate. Panoramic views, Incan terraces, and a strong historical presence.'
+        },
+        pisac: {
+          title: 'Pisac & Ancient Citadel',
+          desc: 'Star-aligned ceremonial temples. Artisan market with sacred crafts, textiles, and instruments.'
+        },
+        ollantaytambo: {
+          title: 'Ollantaytambo & Gateway to Machu Picchu',
+          desc: '“Living Inca City” with potent energetic architecture. Starting point for travel to Aguas Calientes and Machu Picchu.'
+        }
       }
     },
     events: {
@@ -326,6 +382,8 @@ export const TRANSLATIONS = {
       subtitle: 'Hukllawakuy kay hatun llamk\'aypi.',
       collabTitle: 'Imayna Yanapakuy',
       collabText: 'Imaymana ñankuna kan yanapanakuypaq, maki puririchiypaqpas.',
+      excursionsTitle: 'Willka Suyukuna',
+      excursionsSubtitle: 'Kawsay kallpata riqsiy kay suyukunapi.',
       featured: {
         tag: 'Hatun Ruray',
         title: 'Ayni Muyu',
@@ -337,6 +395,32 @@ export const TRANSLATIONS = {
         sustainable: { title: 'Wiñaypaq Ruraykuna', desc: 'Allin kawsaypaq ruraykuna qispichiy.' },
         partnerships: { title: 'Masichakuy', desc: 'Huk tantanakuykunawan yanapanakuy.' },
         volunteer: { title: 'Maki Puririchiy', desc: 'Sunquwan llamk\'ay sapa p\'unchaw ruraykunapi.' }
+      },
+      items: {
+        pitusiray: {
+          title: 'Apu Pitusiray & Lake Qan Qan',
+          desc: 'Mountain of wisdom and protection. Serene lakeside space ideal for meditation, ceremony, and reflection.'
+        },
+        urco: {
+          title: 'Urco – Temple of Water',
+          desc: 'Nearby Incan ceremonial site dedicated to water and fertility. Flowing channels for purification, renewal, and gratitude.'
+        },
+        chinchero: {
+          title: 'Chinchero, Moray & Maras Salt Mines',
+          desc: 'Moray’s ancient agricultural terraces. Maras’ pre-Incan salt pools. Chinchero’s traditional weaving and living culture.'
+        },
+        huchuy: {
+          title: 'Huchuy Qosqo (Little Cusco)',
+          desc: 'Gentle trek to an ancient Incan royal estate. Panoramic views, Incan terraces, and a strong historical presence.'
+        },
+        pisac: {
+          title: 'Pisac & Ancient Citadel',
+          desc: 'Star-aligned ceremonial temples. Artisan market with sacred crafts, textiles, and instruments.'
+        },
+        ollantaytambo: {
+          title: 'Ollantaytambo & Gateway to Machu Picchu',
+          desc: '“Living Inca City” with potent energetic architecture. Starting point for travel to Aguas Calientes and Machu Picchu.'
+        }
       }
     },
     events: {
