@@ -22,7 +22,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative flex items-start pt-40 pb-20 bg-black">
+    <div className="min-h-screen relative flex items-start pt-32 md:pt-40 pb-12 md:pb-20 bg-black">
       {/* Background Unicorn Scene */}
       <div className="fixed inset-0 z-0 bg-black" style={{ top: '10vh' }}>
         <UnicornScene 
@@ -40,19 +40,19 @@ const Home: React.FC = () => {
         <div className="w-full text-left">
           
           <div className="max-w-4xl mr-auto">
-            <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8 tracking-tight drop-shadow-md">
+            <h1 className="text-2xl md:text-5xl font-serif font-bold text-white mb-6 md:mb-8 tracking-tight drop-shadow-md">
               {t('hero', 'title')}
             </h1>
             
-            <div className="space-y-6 text-lg text-white/90 leading-relaxed font-serif text-left drop-shadow-sm">
+            <div className="space-y-4 md:space-y-6 text-sm md:text-lg text-white/90 leading-relaxed font-serif text-left drop-shadow-sm">
               <p>{t('hero', 'p1')}</p>
               <p>{t('hero', 'p2')}</p>
               <p>{t('hero', 'p3')}</p>
               <p>{t('hero', 'p4')}</p>
             </div>
 
-            <div className="mt-10 mb-8 flex justify-start">
-                <button className="bg-honey text-shadow px-10 py-3 rounded-full font-serif font-extrabold text-lg hover:bg-opacity-90 transition-all shadow-md border border-white/20">
+            <div className="mt-8 md:mt-10 mb-8 flex justify-start">
+                <button className="bg-honey text-shadow px-8 py-2 md:px-10 md:py-3 rounded-full font-serif font-extrabold text-sm md:text-lg hover:bg-opacity-90 transition-all shadow-md border border-white/20">
                     {t('hero', 'cta')}
                 </button>
             </div>

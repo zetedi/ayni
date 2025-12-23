@@ -8,7 +8,7 @@ const Profile: React.FC = () => {
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-fixed pt-32 pb-12 px-4 sm:px-6 lg:px-8 relative"
+      className="min-h-screen bg-cover bg-center bg-fixed pt-28 md:pt-32 pb-12 px-4 sm:px-6 lg:px-8 relative"
       style={{ backgroundImage: "url('/seeds.jpg')" }}
     >
       <div className="absolute inset-0 bg-shadow/30 pointer-events-none"></div>
@@ -20,16 +20,16 @@ const Profile: React.FC = () => {
             
             {/* Top Section: Cover & Header */}
             <div className="relative">
-                <div className="h-32 bg-honey w-full"></div>
+                <div className="h-24 md:h-32 bg-honey w-full"></div>
                 
-                <div className="px-8 pb-8">
+                <div className="px-4 md:px-8 pb-4 md:pb-8">
                     {/* Name above Avatar */}
-                    <div className="relative -mt-20 mb-4 flex flex-col items-center sm:items-start">
-                         <div className="mb-4 px-6 py-2 rounded-full bg-[#263238] backdrop-blur-sm shadow-lg border border-honey z-10">
-                            <h2 className="text-3xl font-bold text-white text-center">Who Am I</h2>
+                    <div className="relative -mt-16 md:-mt-20 mb-4 flex flex-col items-center sm:items-start">
+                         <div className="mb-4 px-3 py-1 md:px-6 md:py-2 rounded-full bg-[#263238] backdrop-blur-sm shadow-lg border border-honey z-10">
+                            <h2 className="text-lg md:text-3xl font-bold text-white text-center">Who Am I</h2>
                          </div>
 
-                        <div className="w-32 h-32 bg-white p-1 rounded-full shadow-lg z-10 relative">
+                        <div className="w-20 h-20 md:w-32 md:h-32 bg-white p-1 rounded-full shadow-lg z-10 relative">
                             <img 
                                 src="/seeds.jpg" 
                                 alt="Profile" 
@@ -38,10 +38,10 @@ const Profile: React.FC = () => {
                         </div>
                         
                          <div className="mt-2 ml-2 flex flex-col items-center sm:items-start">
-                             <p className="text-sm text-gray-600 font-medium">{t('profile', 'since')} 2023</p>
+                             <p className="text-xs md:text-sm text-gray-600 font-medium">{t('profile', 'since')} 2023</p>
                              
                              {/* Mobile Edit Button - Visible only on mobile to prevent overlap */}
-                             <button className="mt-4 sm:hidden bg-[#263238] text-white px-6 py-2 rounded-full border border-honey shadow-lg backdrop-blur-sm text-sm font-medium hover:bg-[#263238]/90 transition-colors">
+                             <button className="mt-4 sm:hidden bg-[#263238] text-white px-5 py-2 rounded-full border border-honey shadow-lg backdrop-blur-sm text-xs font-medium hover:bg-[#263238]/90 transition-colors">
                                 {t('profile', 'edit')}
                             </button>
                          </div>
@@ -60,27 +60,27 @@ const Profile: React.FC = () => {
             <hr className="border-gray-200" />
 
             {/* Stats Section */}
-            <div className="px-8 py-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-100">
-                        <Shield className="w-8 h-8 text-honey" />
+            <div className="px-4 md:px-8 py-4 md:py-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-6">
+                    <div className="flex items-center gap-3 p-3 md:p-4 rounded-lg bg-gray-50 border border-gray-100">
+                        <Shield className="w-5 h-5 md:w-8 md:h-8 text-honey" />
                         <div>
-                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'membership')}</p>
-                            <p className="font-semibold text-shadow">{t('profile', 'active')}</p>
+                            <p className="text-[10px] md:text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'membership')}</p>
+                            <p className="font-semibold text-shadow text-xs md:text-base">{t('profile', 'active')}</p>
                         </div>
                     </div>
-                    <div className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-100">
-                        <Flower className="w-8 h-8 text-oxblood" />
+                    <div className="flex items-center gap-3 p-3 md:p-4 rounded-lg bg-gray-50 border border-gray-100">
+                        <Flower className="w-5 h-5 md:w-8 md:h-8 text-oxblood" />
                         <div>
-                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'favoritePlant')}</p>
-                            <p className="font-semibold text-shadow">Wachuma</p>
+                            <p className="text-[10px] md:text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'favoritePlant')}</p>
+                            <p className="font-semibold text-shadow text-xs md:text-base">Wachuma</p>
                         </div>
                     </div>
-                     <div className="flex items-center gap-3 p-4 rounded-lg bg-gray-50 border border-gray-100">
-                        <Clock className="w-8 h-8 text-turf" />
+                     <div className="flex items-center gap-3 p-3 md:p-4 rounded-lg bg-gray-50 border border-gray-100">
+                        <Clock className="w-5 h-5 md:w-8 md:h-8 text-turf" />
                         <div>
-                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'hours')}</p>
-                            <p className="font-semibold text-shadow">42</p>
+                            <p className="text-[10px] md:text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'hours')}</p>
+                            <p className="font-semibold text-shadow text-xs md:text-base">42</p>
                         </div>
                     </div>
                 </div>
@@ -90,29 +90,29 @@ const Profile: React.FC = () => {
             <hr className="border-gray-200" />
 
             {/* History Section */}
-            <div className="px-8 py-8">
+            <div className="px-4 md:px-8 py-4 md:py-8">
                 <button 
                     onClick={() => setIsHistoryOpen(!isHistoryOpen)}
                     className="w-full flex items-center justify-between focus:outline-none group"
                 >
-                    <h3 className="text-xl font-bold text-shadow group-hover:text-oxblood transition-colors">{t('profile', 'history')}</h3>
-                    {isHistoryOpen ? <ChevronUp className="w-6 h-6 text-gray-600" /> : <ChevronDown className="w-6 h-6 text-gray-600" />}
+                    <h3 className="text-base md:text-xl font-bold text-shadow group-hover:text-oxblood transition-colors">{t('profile', 'history')}</h3>
+                    {isHistoryOpen ? <ChevronUp className="w-5 h-5 md:w-6 md:h-6 text-gray-600" /> : <ChevronDown className="w-5 h-5 md:w-6 md:h-6 text-gray-600" />}
                 </button>
                 
                 {isHistoryOpen && (
-                    <div className="space-y-4 mt-6 animate-fade-in">
+                    <div className="space-y-3 md:space-y-4 mt-4 md:mt-6 animate-fade-in">
                         {[1, 2, 3].map((i) => (
-                            <div key={i} className="flex items-center justify-between p-4 rounded-lg bg-gray-50 border border-gray-200 hover:bg-gray-100 transition-colors">
-                                <div className="flex items-center gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-turf/10 text-turf flex items-center justify-center font-bold">
+                            <div key={i} className="flex items-center justify-between p-3 md:p-4 rounded-lg bg-gray-50 border border-gray-200 hover:bg-gray-100 transition-colors">
+                                <div className="flex items-center gap-3 md:gap-4">
+                                    <div className="w-7 h-7 md:w-10 md:h-10 rounded-full bg-turf/10 text-turf flex items-center justify-center font-bold text-xs md:text-base">
                                         $
                                     </div>
                                     <div>
-                                        <p className="font-medium text-shadow">{t('profile', 'contribution')}</p>
-                                        <p className="text-sm text-gray-500">Oct {10 + i}, 2023</p>
+                                        <p className="font-medium text-shadow text-xs md:text-base">{t('profile', 'contribution')}</p>
+                                        <p className="text-[10px] md:text-sm text-gray-500">Oct {10 + i}, 2023</p>
                                     </div>
                                 </div>
-                                <span className="font-bold text-shadow">$50.00</span>
+                                <span className="font-bold text-shadow text-xs md:text-base">$50.00</span>
                             </div>
                         ))}
                     </div>
