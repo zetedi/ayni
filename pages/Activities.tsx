@@ -55,16 +55,15 @@ const Activities: React.FC = () => {
           <div className="mb-20 rounded-2xl overflow-hidden shadow-2xl bg-turf/90 backdrop-blur-sm text-white grid md:grid-cols-2">
               <div className="p-12 flex flex-col justify-center">
                   <div className="uppercase tracking-widest text-chartreuse text-sm font-bold mb-2">Featured Initiative</div>
-                  <h2 className="text-3xl font-serif font-bold mb-4">The Wisdom Circles</h2>
+                  <h2 className="text-3xl font-serif font-bold mb-4">The Ayni Circle</h2>
                   <p className="text-white/90 mb-8 leading-relaxed">
-                      A global initiative bringing together elders and youth to exchange knowledge, stories, and cultural heritage. 
-                      This project embodies our value of <span className="text-white font-bold italic">Wisdom</span> and <span className="text-white font-bold italic">Respect</span>.
+                      A global initiative bringing together members and locals to exchange knowledge, stories, and cultural heritage.
                   </p>
                   <button className="self-start px-6 py-3 border border-white rounded-full hover:bg-white hover:text-turf transition-colors">
                       Learn More
                   </button>
               </div>
-              <div className="h-64 md:h-auto bg-cover bg-center" style={{ backgroundImage: 'url(https://picsum.photos/800/600?grayscale)' }}></div>
+              <div className="h-64 md:h-auto bg-cover bg-center" style={{ backgroundImage: "url('/rainbow.jpg')" }}></div>
           </div>
 
           {/* Collaboration Grid */}

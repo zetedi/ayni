@@ -8,36 +8,6 @@ const products = [
     name: 'Wisdom Journal',
     price: 25.00,
     image: 'https://picsum.photos/400/400?random=1',
-  },
-  {
-    id: '2',
-    name: 'Foundation Hoodie',
-    price: 55.00,
-    image: 'https://picsum.photos/400/400?random=2',
-  },
-  {
-    id: '3',
-    name: 'Ceremonial Candle',
-    price: 18.00,
-    image: 'https://picsum.photos/400/400?random=3',
-  },
-  {
-    id: '4',
-    name: 'Integrity Pendant',
-    price: 85.00,
-    image: 'https://picsum.photos/400/400?random=4',
-  },
-  {
-    id: '5',
-    name: 'Silk Scarf',
-    price: 45.00,
-    image: 'https://picsum.photos/400/400?random=5',
-  },
-  {
-    id: '6',
-    name: 'Artisan Totem',
-    price: 120.00,
-    image: 'https://picsum.photos/400/400?random=6',
   }
 ];
 
@@ -45,21 +15,22 @@ const Shop: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <div 
-      className="min-h-screen bg-cover bg-center bg-fixed relative"
-      style={{ backgroundImage: "url('/seeds.jpg')" }}
-    >
-      <div className="absolute inset-0 bg-white/40 backdrop-blur-[1px]"></div>
-
-      <div className="relative z-10 max-w-7xl mx-auto pt-32 pb-12 px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-serif font-bold text-shadow mb-4 drop-shadow-lg">{t('shop', 'title')}</h1>
-          <p className="text-shadow font-bold text-lg max-w-2xl mx-auto drop-shadow-md">{t('shop', 'subtitle')}</p>
+    <div className="min-h-screen relative pt-32 pb-12 bg-shadow">
+      
+      {/* Header matching Activities page */}
+      <div className="relative px-4 mb-12">
+        <div className="relative max-w-4xl mx-auto text-center z-10 bg-black/40 p-8 rounded-3xl backdrop-blur-sm">
+          <h1 className="text-4xl font-serif font-bold text-white mb-6 drop-shadow-lg">{t('shop', 'title')}</h1>
+          <p className="text-xl text-white font-medium drop-shadow-md">
+            {t('shop', 'subtitle')}
+          </p>
         </div>
+      </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
           {products.map((product) => (
-            <div key={product.id} className="bg-white/80 backdrop-blur-md rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+            <div key={product.id} className="bg-white/80 backdrop-blur-md rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col md:col-start-1 lg:col-start-2">
               <div className="relative h-64 overflow-hidden group">
                 <img 
                   src={product.image} 

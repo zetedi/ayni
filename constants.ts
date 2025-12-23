@@ -65,7 +65,7 @@ export const TRANSLATIONS = {
       welcome: 'Welcome back, seeker.',
       membership: 'Membership Status',
       active: 'Active',
-      history: 'Donation History'
+      history: 'Contribution History'
     }
   },
   [Language.ES]: {
@@ -116,7 +116,7 @@ export const TRANSLATIONS = {
       welcome: 'Bienvenido de nuevo, buscador.',
       membership: 'Estado de Membresía',
       active: 'Activo',
-      history: 'Historial de Donaciones'
+      history: 'Historial de Contribuciones'
     }
   },
   [Language.QU]: {
@@ -167,7 +167,7 @@ export const TRANSLATIONS = {
       welcome: 'Allinmi hamusqayki.',
       membership: 'Suyu',
       active: 'Kawsachkan',
-      history: 'Qusqaykuna'
+      history: 'Yanapaykuna'
     }
   }
 };

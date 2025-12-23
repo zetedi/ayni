@@ -25,7 +25,7 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative flex items-start pt-28 pb-12">
+    <div className="min-h-screen relative flex items-start pt-40 pb-20">
       {/* Background Unicorn Scene */}
       <div className="fixed inset-0 z-0 bg-shadow">
         <UnicornScene 
