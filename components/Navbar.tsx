@@ -13,23 +13,26 @@ const Navbar: React.FC = () => {
 
   const isActive = (path: string) => location.pathname === path;
 
+  // Updated link class to be more subtle since the container is the "card"
   const linkClass = (path: string) => `
-    block px-4 py-2 rounded-md text-base font-medium transition-all duration-200 shadow-sm
+    block px-4 py-2 rounded-full text-sm font-medium transition-all duration-200
     ${isActive(path) 
-      ? 'text-white bg-shadow/80 font-bold backdrop-blur-md border border-white/10' 
-      : 'text-white bg-black/20 hover:bg-shadow/60 hover:text-honey backdrop-blur-sm hover:shadow-md'}
+      ? 'text-shadow bg-white font-bold shadow-md' 
+      : 'text-white/80 hover:text-white hover:bg-white/10'}
   `;
 
   return (
-    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent">
+    <nav className="absolute top-0 left-0 w-full z-50 bg-transparent pt-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-24 items-center">
+        <div className="flex justify-between h-20 items-center">
+          
+          {/* Logo Section */}
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center gap-3 group">
               <img 
                 src="/logo.png" 
                 alt="Ayni Sanctuary" 
-                className="h-10 w-auto object-contain drop-shadow-lg filter brightness-110"
+                className="h-12 w-auto object-contain drop-shadow-lg filter brightness-110"
               />
               <span className="font-serif text-2xl font-bold text-white tracking-tight hidden sm:block drop-shadow-lg group-hover:text-honey transition-colors">
                 Ayni Sanctuary
@@ -37,43 +40,49 @@ const Navbar: React.FC = () => {
             </Link>
           </div>
           
-          <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
-            <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
-            <Link to="/temple" className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
-            <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
-            <Link to="/profile" className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
-            
-            <div className="relative group">
-              <button className="flex items-center gap-2 text-white hover:text-honey font-medium px-4 py-2 rounded-md bg-black/20 hover:bg-shadow/60 backdrop-blur-sm transition-all shadow-sm">
-                <Globe className="w-5 h-5" />
-                <span className="uppercase">{language}</span>
-              </button>
-              <div className="absolute right-0 mt-2 w-32 bg-white/95 backdrop-blur-md rounded-md shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-gray-100 ring-1 ring-black ring-opacity-5">
-                {(Object.keys(Language) as Array<keyof typeof Language>).map((lang) => (
-                  <button
-                    key={lang}
-                    onClick={() => setLanguage(Language[lang])}
-                    className="block w-full text-left px-4 py-2 text-sm text-shadow hover:bg-honey/10 text-gray-800 hover:text-oxblood first:rounded-t-md last:rounded-b-md"
-                  >
-                    {lang === 'EN' ? 'English' : lang === 'ES' ? 'Español' : 'Runasimi'}
-                  </button>
-                ))}
-              </div>
+          {/* Desktop Menu - Combined Card */}
+          <div className="hidden md:flex items-center">
+            <div className="bg-[#263238] rounded-full px-2 py-2 flex items-center shadow-lg border border-honey backdrop-blur-sm gap-2">
+                <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
+                <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
+                <Link to="/temple" className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
+                <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
+                <Link to="/profile" className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
+                
+                <div className="h-6 w-px bg-white/20 mx-2"></div>
+
+                <div className="relative group px-2">
+                    <button className="flex items-center gap-2 text-white/80 hover:text-white font-medium rounded-md transition-colors">
+                        <Globe className="w-4 h-4" />
+                        <span className="uppercase text-xs">{language}</span>
+                    </button>
+                    <div className="absolute right-0 top-full mt-2 w-32 bg-[#263238] rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 border border-white/10 overflow-hidden py-1">
+                        {(Object.keys(Language) as Array<keyof typeof Language>).map((lang) => (
+                        <button
+                            key={lang}
+                            onClick={() => setLanguage(Language[lang])}
+                            className="block w-full text-left px-4 py-2 text-sm text-white/80 hover:bg-white/10 hover:text-white"
+                        >
+                            {lang === 'EN' ? 'English' : lang === 'ES' ? 'Español' : 'Runasimi'}
+                        </button>
+                        ))}
+                    </div>
+                </div>
             </div>
           </div>
 
+          {/* Mobile Menu Button */}
           <div className="flex items-center md:hidden gap-4">
              <div className="relative group">
-              <button className="flex items-center gap-1 text-white drop-shadow-md bg-black/20 px-3 py-1 rounded-md backdrop-blur-sm">
-                <span className="uppercase font-bold text-sm">{language}</span>
+              <button className="flex items-center gap-1 text-white drop-shadow-md bg-shadow px-3 py-1 rounded-full backdrop-blur-sm border border-white/10">
+                <span className="uppercase font-bold text-xs">{language}</span>
               </button>
-              <div className="absolute right-0 mt-2 w-24 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-gray-100">
+              <div className="absolute right-0 mt-2 w-24 bg-[#263238] rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50 border border-white/10">
                  {(Object.keys(Language) as Array<keyof typeof Language>).map((lang) => (
                   <button
                     key={lang}
                     onClick={() => setLanguage(Language[lang])}
-                    className="block w-full text-left px-4 py-2 text-sm text-shadow hover:bg-honey/10 text-gray-800"
+                    className="block w-full text-left px-4 py-2 text-sm text-white hover:bg-white/10"
                   >
                     {lang}
                   </button>
@@ -82,23 +91,23 @@ const Navbar: React.FC = () => {
             </div>
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-honey bg-black/20 hover:bg-shadow/60 backdrop-blur-sm focus:outline-none shadow-sm transition-colors"
+              className="inline-flex items-center justify-center p-3 rounded-full text-white hover:text-honey bg-shadow shadow-lg border border-white/10 transition-colors"
             >
-              {isOpen ? <X className="block h-6 w-6" /> : <Menu className="block h-6 w-6" />}
+              {isOpen ? <X className="block h-5 w-5" /> : <Menu className="block h-5 w-5" />}
             </button>
           </div>
         </div>
       </div>
 
-      {/* Mobile menu */}
+      {/* Mobile menu Dropdown */}
       {isOpen && (
-        <div className="md:hidden bg-shadow/95 backdrop-blur-md border-t border-white/10 animate-fade-in">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-            <Link to="/" onClick={() => setIsOpen(false)} className={linkClass('/')}>{t('nav', 'home')}</Link>
-            <Link to="/activities" onClick={() => setIsOpen(false)} className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
-            <Link to="/temple" onClick={() => setIsOpen(false)} className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
-            <Link to="/shop" onClick={() => setIsOpen(false)} className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
-            <Link to="/profile" onClick={() => setIsOpen(false)} className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
+        <div className="md:hidden absolute top-24 left-0 w-full bg-[#263238]/95 backdrop-blur-md border-t border-white/10 animate-fade-in z-50">
+          <div className="px-4 pt-4 pb-6 space-y-2">
+            <Link to="/" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'home')}</Link>
+            <Link to="/activities" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'activities')}</Link>
+            <Link to="/temple" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'temple')}</Link>
+            <Link to="/shop" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'shop')}</Link>
+            <Link to="/profile" onClick={() => setIsOpen(false)} className="block px-4 py-3 rounded-lg text-white hover:bg-white/10">{t('nav', 'profile')}</Link>
           </div>
         </div>
       )}

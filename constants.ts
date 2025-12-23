@@ -104,6 +104,7 @@ export const TRANSLATIONS = {
       edit: 'Edit Profile',
       since: 'Member since',
       impact: 'Impact Score',
+      favoritePlant: 'Favorite Plant',
       hours: 'Volunteer Hours',
       contribution: 'Community Contribution'
     }
@@ -195,6 +196,7 @@ export const TRANSLATIONS = {
       edit: 'Editar Perfil',
       since: 'Miembro desde',
       impact: 'Puntaje de Impacto',
+      favoritePlant: 'Planta Favorita',
       hours: 'Horas de Voluntariado',
       contribution: 'Contribución Comunitaria'
     }
@@ -286,6 +288,7 @@ export const TRANSLATIONS = {
       edit: 'Allichay',
       since: 'Kaymanta pacha',
       impact: 'Yanapay Tupu',
+      favoritePlant: 'Yura',
       hours: 'Llamk\'asqa Pachakuna',
       contribution: 'Ayllu Yanapay'
     }
