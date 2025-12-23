@@ -17,9 +17,9 @@ const Shop: React.FC = () => {
   const buttonStyle = "w-full py-3 px-4 bg-[#263238] border border-honey rounded-full text-white font-medium shadow-lg backdrop-blur-sm hover:bg-[#263238]/90 transition-all flex items-center justify-center gap-2";
 
   return (
-    <div className="min-h-screen relative pt-32 pb-24 bg-shadow">
+    <div className="min-h-screen relative pt-32 pb-24 bg-shadow px-4 sm:px-6 lg:px-8">
       
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
         
         {/* Single Card Container */}
         <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-2xl overflow-hidden">

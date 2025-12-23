@@ -22,16 +22,16 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen relative flex items-start pt-40 pb-20">
+    <div className="min-h-screen relative flex items-start pt-40 pb-20 bg-black">
       {/* Background Unicorn Scene */}
-      <div className="fixed inset-0 z-0 bg-shadow">
+      <div className="fixed inset-0 z-0 bg-black" style={{ top: '10vh' }}>
         <UnicornScene 
           projectId="cOlmT8cZsSlzzymziBBA" 
           width={dimensions.width} 
           height={dimensions.height} 
         />
         {/* Subtle overlay for text readability assurance */}
-        <div className="absolute inset-0 bg-shadow/20 pointer-events-none"></div>
+        <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
       </div>
 
       <div className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

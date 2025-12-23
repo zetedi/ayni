@@ -90,7 +90,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Foundation Store',
+      title: 'Ayni Store',
       subtitle: 'Support our cause with these exclusive items.',
       addToCart: 'Add to Cart',
       productDesc: 'Beautifully crafted to represent the values of our foundation.'
@@ -182,7 +182,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Tienda de la Fundación',
+      title: 'Tienda Ayni',
       subtitle: 'Apoya nuestra causa con estos artículos exclusivos.',
       addToCart: 'Añadir al Carrito',
       productDesc: 'Hermosamente elaborado para representar los valores de nuestra fundación.'
@@ -274,7 +274,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Wasi Qhatu',
+      title: 'Ayni Qhatu',
       subtitle: 'Yanapakuy kay sumaq ruraykunawan.',
       addToCart: 'Qhatuman churay',
       productDesc: 'Sumaq rurasqa, wasinchikpa chaninkunata rikuchinapaq.'

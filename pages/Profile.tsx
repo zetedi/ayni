@@ -13,10 +13,10 @@ const Profile: React.FC = () => {
     >
       <div className="absolute inset-0 bg-shadow/30 pointer-events-none"></div>
 
-      <div className="max-w-4xl mx-auto relative z-10">
+      <div className="max-w-7xl mx-auto relative z-10">
         
         {/* Combined Single Card */}
-        <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-xl overflow-hidden">
+        <div className="bg-white/95 backdrop-blur-md rounded-3xl shadow-xl overflow-hidden">
             
             {/* Top Section: Cover & Header */}
             <div className="relative">
@@ -37,12 +37,18 @@ const Profile: React.FC = () => {
                             />
                         </div>
                         
-                         <div className="mt-2 ml-2">
+                         <div className="mt-2 ml-2 flex flex-col items-center sm:items-start">
                              <p className="text-sm text-gray-600 font-medium">{t('profile', 'since')} 2023</p>
+                             
+                             {/* Mobile Edit Button - Visible only on mobile to prevent overlap */}
+                             <button className="mt-4 sm:hidden bg-[#263238] text-white px-6 py-2 rounded-full border border-honey shadow-lg backdrop-blur-sm text-sm font-medium hover:bg-[#263238]/90 transition-colors">
+                                {t('profile', 'edit')}
+                            </button>
                          </div>
                     </div>
                     
-                    <div className="absolute top-4 right-4">
+                    {/* Desktop Edit Button - Hidden on mobile */}
+                    <div className="absolute top-4 right-4 hidden sm:block">
                         <button className="bg-[#263238] text-white px-6 py-2 rounded-full border border-honey shadow-lg backdrop-blur-sm text-sm font-medium hover:bg-[#263238]/90 transition-colors">
                             {t('profile', 'edit')}
                         </button>
