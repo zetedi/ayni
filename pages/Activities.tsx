@@ -8,23 +8,23 @@ const Activities: React.FC = () => {
   const collaborationTypes = [
     {
       icon: <Users className="w-8 h-8 text-turf" />,
-      title: "Community Outreach",
-      description: "Direct engagement with local communities to spread our core values and support those in need."
+      title: t('activities', 'types.outreach.title'),
+      description: t('activities', 'types.outreach.desc')
     },
     {
       icon: <Sprout className="w-8 h-8 text-chartreuse" />,
-      title: "Sustainable Projects",
-      description: "Building long-term infrastructure for sovereignty and prosperity in under-served regions."
+      title: t('activities', 'types.sustainable.title'),
+      description: t('activities', 'types.sustainable.desc')
     },
     {
       icon: <Handshake className="w-8 h-8 text-honey" />,
-      title: "Partnerships",
-      description: "Strategic alliances with other organizations that share our vision of Integrity and Honor."
+      title: t('activities', 'types.partnerships.title'),
+      description: t('activities', 'types.partnerships.desc')
     },
     {
       icon: <Heart className="w-8 h-8 text-oxblood" />,
-      title: "Volunteer Program",
-      description: "Hands-on opportunities to serve with Love and Presence in our daily operations."
+      title: t('activities', 'types.volunteer.title'),
+      description: t('activities', 'types.volunteer.desc')
     }
   ];
 
@@ -33,8 +33,8 @@ const Activities: React.FC = () => {
       className="min-h-screen bg-cover bg-center bg-fixed relative"
       style={{ backgroundImage: "url('/harmony.jpg')" }}
     >
-       {/* Page Overlay Removed as requested */}
-       {/* <div className="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div> */}
+       {/* Background Opacity Overlay */}
+       <div className="absolute inset-0 bg-black/30 pointer-events-none"></div>
 
       {/* Main Content Wrapper */}
       <div className="relative z-10">
@@ -54,13 +54,13 @@ const Activities: React.FC = () => {
           {/* Featured Activity */}
           <div className="mb-20 rounded-2xl overflow-hidden shadow-2xl bg-turf/90 backdrop-blur-sm text-white grid md:grid-cols-2">
               <div className="p-12 flex flex-col justify-center">
-                  <div className="uppercase tracking-widest text-chartreuse text-sm font-bold mb-2">Featured Initiative</div>
-                  <h2 className="text-3xl font-serif font-bold mb-4">The Ayni Circle</h2>
+                  <div className="uppercase tracking-widest text-chartreuse text-sm font-bold mb-2">{t('activities', 'featured.tag')}</div>
+                  <h2 className="text-3xl font-serif font-bold mb-4 text-white">{t('activities', 'featured.title')}</h2>
                   <p className="text-white/90 mb-8 leading-relaxed">
-                      A global initiative bringing together members and locals to exchange knowledge, stories, and cultural heritage.
+                      {t('activities', 'featured.desc')}
                   </p>
                   <button className="self-start px-6 py-3 border border-white rounded-full hover:bg-white hover:text-turf transition-colors">
-                      Learn More
+                      {t('activities', 'featured.btn')}
                   </button>
               </div>
               <div className="h-64 md:h-auto bg-cover bg-center" style={{ backgroundImage: "url('/rainbow.jpg')" }}></div>

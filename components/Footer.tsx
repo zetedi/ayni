@@ -15,7 +15,7 @@ const Footer: React.FC = () => {
                 <img 
                   src="/logo.png" 
                   alt="Ayni Sanctuary" 
-                  className="w-20 h-20 object-contain"
+                  className="h-10 w-auto object-contain"
                 />
                 <span className="font-serif text-xl font-bold tracking-wide text-white">
                   Ayni Sanctuary

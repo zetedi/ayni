@@ -14,8 +14,21 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   const [language, setLanguage] = useState<Language>(Language.EN);
 
   const t = (section: string, key: string): string => {
-    // @ts-ignore - dynamic key access for simplicity in this scope
-    return TRANSLATIONS[language]?.[section]?.[key] || key;
+    // @ts-ignore - access section first
+    let value = TRANSLATIONS[language]?.[section];
+
+    if (!value) return key;
+
+    // Split key by dot to handle nesting (e.g. 'featured.title')
+    const parts = key.split('.');
+    for (const part of parts) {
+        if (value === undefined || value === null) {
+            return key;
+        }
+        value = value[part];
+    }
+    
+    return (value as string) || key;
   };
 
   return (

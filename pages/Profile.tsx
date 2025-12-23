@@ -30,11 +30,11 @@ const Profile: React.FC = () => {
                         </div>
                         <div className="ml-4 mb-1 px-4 py-2 rounded-md bg-black/20 backdrop-blur-sm border border-white/10 shadow-sm">
                             <h2 className="text-2xl font-bold text-white text-shadow-sm">John Doe</h2>
-                            <p className="text-sm text-white/90">Member since 2023</p>
+                            <p className="text-sm text-white/90">{t('profile', 'since')} 2023</p>
                         </div>
                     </div>
                     <button className="bg-shadow text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-turf transition-colors shadow-md">
-                        Edit Profile
+                        {t('profile', 'edit')}
                     </button>
                 </div>
 
@@ -49,15 +49,15 @@ const Profile: React.FC = () => {
                     <div className="flex items-center gap-3">
                         <Award className="w-8 h-8 text-oxblood" />
                         <div>
-                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">Impact Score</p>
+                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'impact')}</p>
                             <p className="font-semibold text-shadow">Top 10%</p>
                         </div>
                     </div>
                      <div className="flex items-center gap-3">
                         <Clock className="w-8 h-8 text-turf" />
                         <div>
-                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">Volunteer Hours</p>
-                            <p className="font-semibold text-shadow">42 Hours</p>
+                            <p className="text-xs text-gray-500 uppercase font-bold tracking-wider">{t('profile', 'hours')}</p>
+                            <p className="font-semibold text-shadow">42</p>
                         </div>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const Profile: React.FC = () => {
                                     $
                                 </div>
                                 <div>
-                                    <p className="font-medium text-shadow">Community Contribution</p>
+                                    <p className="font-medium text-shadow">{t('profile', 'contribution')}</p>
                                     <p className="text-sm text-gray-500">Oct {10 + i}, 2023</p>
                                 </div>
                             </div>

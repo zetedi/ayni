@@ -47,7 +47,7 @@ const Shop: React.FC = () => {
                    <span className="text-oxblood font-bold">${product.price.toFixed(2)}</span>
                 </div>
                 <p className="text-gray-500 text-sm mb-6 flex-1">
-                  Beautifully crafted to represent the values of our foundation.
+                  {t('shop', 'productDesc')}
                 </p>
                 <button className="w-full bg-shadow text-white py-3 px-4 rounded-md hover:bg-turf flex items-center justify-center gap-2 transition-colors">
                   <ShoppingBag className="w-4 h-4" />

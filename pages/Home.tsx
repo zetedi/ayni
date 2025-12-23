@@ -44,22 +44,14 @@ const Home: React.FC = () => {
           
           <div className="max-w-4xl mr-auto">
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-8 tracking-tight drop-shadow-md">
-              Where community, creativity and collective consciousness thrive
+              {t('hero', 'title')}
             </h1>
             
             <div className="space-y-6 text-lg text-white/90 leading-relaxed font-serif text-left drop-shadow-sm">
-              <p>
-                Ayni means sacred reciprocity and interconnectedness. It is the timeless principle that all of life thrives through balance, harmony, and mutual care. From this ancient Andean wisdom, the Ayni Foundation was born as a living movement dedicated to restoring right relationship between humanity, nature, and spirit.
-              </p>
-              <p>
-                Under its guiding light, the Ayni Sanctuary emerged as a heart centered home in the Sacred Valley of Peru. It is a place where the teachings of Ayni are not only remembered but lived. Built upon the principles of regeneration, authenticity, and mastery, the Sanctuary serves as a space for deep healing, conscious evolution, and the embodiment of a new way of being.
-              </p>
-              <p>
-                The Ayni Team is a constellation of practitioners and creatives including meditation and yoga guides, musicians, storytellers, hospitality stewards, digital visionaries, and wisdom keepers of ancestral plant traditions. Each brings a unique mastery that forms a living tapestry of healing, creativity, and grounded leadership. United in purpose, they hold the Sanctuary with integrity, presence, and the spirit of sacred reciprocity.
-              </p>
-              <p>
-                Ayni Sanctuary is a living ecosystem where community, land, and spirit co-create a regenerative way of being. Through organic living, sacred arts, energy medicine, and self mastery, it invites each person to remember their true nature. Here, harmony is not just taught, it is lived.
-              </p>
+              <p>{t('hero', 'p1')}</p>
+              <p>{t('hero', 'p2')}</p>
+              <p>{t('hero', 'p3')}</p>
+              <p>{t('hero', 'p4')}</p>
             </div>
 
             <div className="mt-10 mb-8 flex justify-start">

@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
               <img 
                 src="/logo.png" 
                 alt="Ayni Sanctuary" 
-                className="w-20 h-20 object-contain drop-shadow-lg filter brightness-110"
+                className="h-10 w-auto object-contain drop-shadow-lg filter brightness-110"
               />
               <span className="font-serif text-2xl font-bold text-white tracking-tight hidden sm:block drop-shadow-lg group-hover:text-honey transition-colors">
                 Ayni Sanctuary
@@ -40,6 +40,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center space-x-6">
             <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
             <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
+            <Link to="/temple" className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
             <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
             <Link to="/profile" className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
             
@@ -95,6 +96,7 @@ const Navbar: React.FC = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
             <Link to="/" onClick={() => setIsOpen(false)} className={linkClass('/')}>{t('nav', 'home')}</Link>
             <Link to="/activities" onClick={() => setIsOpen(false)} className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
+            <Link to="/temple" onClick={() => setIsOpen(false)} className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
             <Link to="/shop" onClick={() => setIsOpen(false)} className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
             <Link to="/profile" onClick={() => setIsOpen(false)} className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
           </div>
