@@ -43,11 +43,10 @@ const Stay: React.FC = () => {
 
   return (
     <div 
-      className="min-h-screen bg-cover bg-center bg-fixed relative"
-      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1518173946687-a4c8892bbd9f?q=80&w=2574&auto=format&fit=crop')" }}
+      className="min-h-screen bg-shadow relative"
     >
-       {/* Background Opacity Overlay */}
-       <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
+       {/* Background Opacity Overlay - subtle texture to break up the solid color */}
+       <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
 
       {/* Main Content Wrapper */}
       <div className="relative z-10 pt-28 md:pt-32 pb-12 md:pb-24 px-4 sm:px-6 lg:px-8">

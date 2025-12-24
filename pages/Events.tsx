@@ -78,8 +78,8 @@ const Events: React.FC = () => {
                             {t('events', 'featured.btn')}
                         </button>
                     </div>
-                    {/* Placeholder for event image */}
-                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('https://picsum.photos/seed/dance/800/800')" }}>
+                    {/* Featured event image - Updated to bloom.png */}
+                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('/bloom.png')" }}>
                          <div className="w-full h-full bg-gradient-to-t from-shadow/80 to-transparent flex items-end p-8">
                          </div>
                     </div>
