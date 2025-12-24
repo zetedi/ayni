@@ -52,11 +52,10 @@ const Navbar: React.FC = () => {
             <div className="bg-[#263238] rounded-full px-2 py-2 flex items-center shadow-lg border border-honey backdrop-blur-sm gap-2">
                 <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
                 <Link to="/stay" className={linkClass('/stay')}>{t('nav', 'stay')}</Link>
-                <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
-                <Link to="/events" className={linkClass('/events')}>{t('nav', 'events')}</Link>
-                <Link to="/food" className={linkClass('/food')}>{t('nav', 'food')}</Link>
+                <Link to="/experience" className={linkClass('/experience')}>{t('nav', 'experience')}</Link>
+                <Link to="/food" className={linkClass('/food')}>{t('nav', 'eat')}</Link>
                 <Link to="/temple" className={linkClass('/temple')}>{t('nav', 'temple')}</Link>
-                <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'shop')}</Link>
+                <Link to="/shop" className={linkClass('/shop')}>{t('nav', 'gift')}</Link>
                 <Link to="/profile" className={linkClass('/profile')}>{t('nav', 'profile')}</Link>
                 
                 <div className="h-6 w-px bg-white/20 mx-2"></div>
@@ -115,11 +114,10 @@ const Navbar: React.FC = () => {
           <div className="px-4 pt-4 pb-6 space-y-1">
             <Link to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/')}>{t('nav', 'home')}</Link>
             <Link to="/stay" onClick={() => setIsOpen(false)} className={mobileLinkClass('/stay')}>{t('nav', 'stay')}</Link>
-            <Link to="/activities" onClick={() => setIsOpen(false)} className={mobileLinkClass('/activities')}>{t('nav', 'activities')}</Link>
-            <Link to="/events" onClick={() => setIsOpen(false)} className={mobileLinkClass('/events')}>{t('nav', 'events')}</Link>
-            <Link to="/food" onClick={() => setIsOpen(false)} className={mobileLinkClass('/food')}>{t('nav', 'food')}</Link>
+            <Link to="/experience" onClick={() => setIsOpen(false)} className={mobileLinkClass('/experience')}>{t('nav', 'experience')}</Link>
+            <Link to="/food" onClick={() => setIsOpen(false)} className={mobileLinkClass('/food')}>{t('nav', 'eat')}</Link>
             <Link to="/temple" onClick={() => setIsOpen(false)} className={mobileLinkClass('/temple')}>{t('nav', 'temple')}</Link>
-            <Link to="/shop" onClick={() => setIsOpen(false)} className={mobileLinkClass('/shop')}>{t('nav', 'shop')}</Link>
+            <Link to="/shop" onClick={() => setIsOpen(false)} className={mobileLinkClass('/shop')}>{t('nav', 'gift')}</Link>
             <Link to="/profile" onClick={() => setIsOpen(false)} className={mobileLinkClass('/profile')}>{t('nav', 'profile')}</Link>
           </div>
         </div>

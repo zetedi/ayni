@@ -22,11 +22,10 @@ export const TRANSLATIONS = {
       home: 'Home',
       stay: 'Stay',
       profile: 'Profile',
-      shop: 'Shop',
-      activities: 'Activities',
-      events: 'Events',
+      gift: 'Gift',
+      experience: 'Experience',
       temple: 'Temple',
-      food: 'Food',
+      eat: 'Eat',
       login: 'Login'
     },
     values: {
@@ -87,6 +86,10 @@ export const TRANSLATIONS = {
               desc: '2 Twin deluxe beds.'
           }
       }
+    },
+    experience: {
+        title: 'Experience Ayni',
+        subtitle: 'Events, activities, and sacred collaboration.',
     },
     activities: {
       title: 'Activities & Collaboration',
@@ -156,7 +159,7 @@ export const TRANSLATIONS = {
         }
     },
     food: {
-      title: 'Healthy food made with love',
+      title: 'Eat & Nourish',
       subtitle: 'At Ayni Sanctuary, food is ceremony.',
       featured: {
         tag: 'Nourishment',
@@ -189,7 +192,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Ayni Store',
+      title: 'Ayni Gift Shop',
       subtitle: 'Support our cause with these exclusive items.',
       addToCart: 'Add to Cart',
       productDesc: 'Beautifully crafted to represent the values of our foundation.'
@@ -213,11 +216,10 @@ export const TRANSLATIONS = {
       home: 'Inicio',
       stay: 'Alojamiento',
       profile: 'Perfil',
-      shop: 'Tienda',
-      activities: 'Actividades',
-      events: 'Eventos',
+      gift: 'Regalos',
+      experience: 'Experiencia',
       temple: 'Templo',
-      food: 'Comida',
+      eat: 'Comer',
       login: 'Entrar'
     },
     values: {
@@ -278,6 +280,10 @@ export const TRANSLATIONS = {
               desc: '2 camas Twin de lujo.'
           }
       }
+    },
+    experience: {
+        title: 'Experiencia Ayni',
+        subtitle: 'Eventos, actividades y colaboración sagrada.',
     },
     activities: {
       title: 'Actividades y Colaboración',
@@ -347,7 +353,7 @@ export const TRANSLATIONS = {
         }
     },
     food: {
-      title: 'Comida saludable hecha con amor',
+      title: 'Comer y Nutrir',
       subtitle: 'En el Santuario Ayni, la comida es ceremonia.',
       featured: {
         tag: 'Nutrición',
@@ -380,7 +386,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Tienda Ayni',
+      title: 'Tienda de Regalos Ayni',
       subtitle: 'Apoya nuestra causa con estos artículos exclusivos.',
       addToCart: 'Añadir al Carrito',
       productDesc: 'Hermosamente elaborado para representar los valores de nuestra fundación.'
@@ -404,11 +410,10 @@ export const TRANSLATIONS = {
       home: 'Qallariy',
       stay: 'Samana',
       profile: 'Runa',
-      shop: 'Qhatu',
-      activities: 'Ruraykuna',
-      events: 'Raymikuna',
+      gift: 'Suñay',
+      experience: 'Kawsay',
       temple: 'Willka Wasi',
-      food: 'Mikhuna',
+      eat: 'Mikhuy',
       login: 'Yaykuy'
     },
     values: {
@@ -469,6 +474,10 @@ export const TRANSLATIONS = {
               desc: 'Iskay huch\'uy sumaq puñunakuna.'
           }
       }
+    },
+    experience: {
+        title: 'Ayni Kawsay',
+        subtitle: 'Raymikuna, ruraykuna, ayninakuy ima.',
     },
     activities: {
       title: 'Ruraykuna & Ayninakuy',
@@ -538,7 +547,7 @@ export const TRANSLATIONS = {
         }
     },
     food: {
-      title: 'Allin mikhuna munaywan rurasqa',
+      title: 'Mikhuy & Kallpachay',
       subtitle: 'Ayni Sanctuarypi, mikhuyqa huk raymim.',
       featured: {
         tag: 'Kawsay',
@@ -571,7 +580,7 @@ export const TRANSLATIONS = {
       }
     },
     shop: {
-      title: 'Ayni Qhatu',
+      title: 'Ayni Suñay Qhatu',
       subtitle: 'Yanapakuy kay sumaq ruraykunawan.',
       addToCart: 'Qhatuman churay',
       productDesc: 'Sumaq rurasqa, wasinchikpa chaninkunata rikuchinapaq.'
