@@ -51,6 +51,7 @@ const Navbar: React.FC = () => {
           <div className="hidden md:flex items-center">
             <div className="bg-[#263238] rounded-full px-2 py-2 flex items-center shadow-lg border border-honey backdrop-blur-sm gap-2">
                 <Link to="/" className={linkClass('/')}>{t('nav', 'home')}</Link>
+                <Link to="/stay" className={linkClass('/stay')}>{t('nav', 'stay')}</Link>
                 <Link to="/activities" className={linkClass('/activities')}>{t('nav', 'activities')}</Link>
                 <Link to="/events" className={linkClass('/events')}>{t('nav', 'events')}</Link>
                 <Link to="/food" className={linkClass('/food')}>{t('nav', 'food')}</Link>
@@ -113,6 +114,7 @@ const Navbar: React.FC = () => {
         <div className="md:hidden absolute top-20 left-0 w-full bg-[#263238]/95 backdrop-blur-md border-t border-b border-honey animate-fade-in z-50">
           <div className="px-4 pt-4 pb-6 space-y-1">
             <Link to="/" onClick={() => setIsOpen(false)} className={mobileLinkClass('/')}>{t('nav', 'home')}</Link>
+            <Link to="/stay" onClick={() => setIsOpen(false)} className={mobileLinkClass('/stay')}>{t('nav', 'stay')}</Link>
             <Link to="/activities" onClick={() => setIsOpen(false)} className={mobileLinkClass('/activities')}>{t('nav', 'activities')}</Link>
             <Link to="/events" onClick={() => setIsOpen(false)} className={mobileLinkClass('/events')}>{t('nav', 'events')}</Link>
             <Link to="/food" onClick={() => setIsOpen(false)} className={mobileLinkClass('/food')}>{t('nav', 'food')}</Link>

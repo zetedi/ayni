@@ -10,6 +10,7 @@ import Activities from './pages/Activities';
 import Temple from './pages/Temple';
 import Events from './pages/Events';
 import Food from './pages/Food';
+import Stay from './pages/Stay';
 
 const App: React.FC = () => {
   return (
@@ -20,6 +21,7 @@ const App: React.FC = () => {
           <main className="flex-grow">
             <Routes>
               <Route path="/" element={<Home />} />
+              <Route path="/stay" element={<Stay />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/shop" element={<Shop />} />
               <Route path="/activities" element={<Activities />} />

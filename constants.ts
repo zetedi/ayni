@@ -20,6 +20,7 @@ export const TRANSLATIONS = {
   [Language.EN]: {
     nav: {
       home: 'Home',
+      stay: 'Stay',
       profile: 'Profile',
       shop: 'Shop',
       activities: 'Activities',
@@ -56,6 +57,36 @@ export const TRANSLATIONS = {
     footer: {
       connect: 'Connect with us',
       rights: 'All rights reserved.'
+    },
+    stay: {
+      title: 'Stay & Rest',
+      subtitle: 'Your home in the Sacred Valley.',
+      loungeTitle: 'The Lounge',
+      loungeTag: 'Community Space',
+      loungeText: 'Here, warmth, creativity, and community come alive in a vibrant environment made for sharing meals, relaxing by the fire, connecting with others, or simply unwinding in comfort. With cozy seating, inspiring books, and nourishing dishes made from local ingredients, the Lounge offers a welcoming home base for rest, celebration, and authentic connection.',
+      roomsTitle: 'Rooms & Suites',
+      roomsSubtitle: 'Comfortable accommodations designed for deep rest.',
+      features: {
+          wifi: 'Wi-Fi access',
+          bath: 'Private bathroom with hot water',
+          kitchen: 'Kitchenette',
+          balcony: 'Private Balcony',
+          beds: 'Beds'
+      },
+      types: {
+          suite: {
+              title: 'Classic Suite',
+              desc: 'One Queen Bed (plus the option of an additional Twin or Full bed).'
+          },
+          deluxe: {
+              title: 'Deluxe Suite',
+              desc: 'Two separate sleeping spaces one with a Twin bed one with a Full bed.'
+          },
+          bungalow: {
+              title: 'Classic Bungalow',
+              desc: '2 Twin deluxe beds.'
+          }
+      }
     },
     activities: {
       title: 'Activities & Collaboration',
@@ -180,6 +211,7 @@ export const TRANSLATIONS = {
   [Language.ES]: {
     nav: {
       home: 'Inicio',
+      stay: 'Alojamiento',
       profile: 'Perfil',
       shop: 'Tienda',
       activities: 'Actividades',
@@ -216,6 +248,36 @@ export const TRANSLATIONS = {
     footer: {
       connect: 'Conéctate con nosotros',
       rights: 'Todos los derechos reservados.'
+    },
+    stay: {
+      title: 'Alojamiento y Descanso',
+      subtitle: 'Tu hogar en el Valle Sagrado.',
+      loungeTitle: 'El Salón',
+      loungeTag: 'Espacio Comunitario',
+      loungeText: 'Aquí, la calidez, la creatividad y la comunidad cobran vida en un entorno vibrante hecho para compartir comidas, relajarse junto al fuego, conectarse con otros o simplemente descansar con comodidad. Con asientos acogedores, libros inspiradores y platos nutritivos elaborados con ingredientes locales, el Salón ofrece una base acogedora para el descanso, la celebración y la conexión auténtica.',
+      roomsTitle: 'Habitaciones y Suites',
+      roomsSubtitle: 'Alojamiento confortable diseñado para un descanso profundo.',
+      features: {
+          wifi: 'Acceso Wi-Fi',
+          bath: 'Baño privado con agua caliente',
+          kitchen: 'Cocineta',
+          balcony: 'Balcón Privado',
+          beds: 'Camas'
+      },
+      types: {
+          suite: {
+              title: 'Suite Clásica',
+              desc: 'Una cama Queen (más la opción de una cama adicional Twin o Full).'
+          },
+          deluxe: {
+              title: 'Suite De Lujo',
+              desc: 'Dos espacios separados para dormir, uno con cama Twin y otro con cama Full.'
+          },
+          bungalow: {
+              title: 'Bungalow Clásico',
+              desc: '2 camas Twin de lujo.'
+          }
+      }
     },
     activities: {
       title: 'Actividades y Colaboración',
@@ -340,6 +402,7 @@ export const TRANSLATIONS = {
   [Language.QU]: {
     nav: {
       home: 'Qallariy',
+      stay: 'Samana',
       profile: 'Runa',
       shop: 'Qhatu',
       activities: 'Ruraykuna',
@@ -376,6 +439,36 @@ export const TRANSLATIONS = {
     footer: {
       connect: 'Ñuqaykuwan tinkuy',
       rights: 'Llapallan hayñikuna waqaychasqa.'
+    },
+    stay: {
+      title: 'Samana & Tiyay',
+      subtitle: 'Wasiyki Valle Sagradopi.',
+      loungeTitle: 'Tiyana Wasi',
+      loungeTag: 'Ayllu Pacha',
+      loungeText: 'Kaypiqa munay, kamay, ayllu kawsay ima k\'ancharin. Kuska mikhunapaq, nina qayllapi tiyanapaq, rimanakunapaq. Sumaq tiyanakunawan, librokunawan, allin mikhuykunawan ima, Tiyana Wasiqa sumaq samana pacha.',
+      roomsTitle: 'Puñuna Wasikuna',
+      roomsSubtitle: 'Sumaq puñunakuna samakuyta tarinapaq.',
+      features: {
+          wifi: 'Wi-Fi',
+          bath: 'Bañu q\'uñi yakuwan',
+          kitchen: 'Wayk\'una',
+          balcony: 'Hawa warkuna',
+          beds: 'Puñunakuna'
+      },
+      types: {
+          suite: {
+              title: 'Hatun Puñuna',
+              desc: 'Huk hatun puñuna (huk huch\'uy puñunawanpas).'
+          },
+          deluxe: {
+              title: 'Sumaq Hatun Puñuna',
+              desc: 'Iskay puñuna pacha, huk huch\'uywan huk hatunwan.'
+          },
+          bungalow: {
+              title: 'Huch\'uy Wasi',
+              desc: 'Iskay huch\'uy sumaq puñunakuna.'
+          }
+      }
     },
     activities: {
       title: 'Ruraykuna & Ayninakuy',
