@@ -1,15 +1,93 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../context/LanguageContext';
-import { Wifi, Coffee, Bath, Wind, BedDouble } from 'lucide-react';
+import { Wifi, Coffee, Bath, Wind, BedDouble, ChevronLeft, ChevronRight } from 'lucide-react';
+
+interface Room {
+    title: string;
+    description: string;
+    images: string[];
+    features: { icon: React.ReactNode; text: string }[];
+}
+
+const RoomCard: React.FC<{ room: Room }> = ({ room }) => {
+    const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+    const nextImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (room.images.length <= 1) return;
+        setCurrentImageIndex((prev) => (prev + 1) % room.images.length);
+    };
+
+    const prevImage = (e: React.MouseEvent) => {
+        e.stopPropagation();
+        if (room.images.length <= 1) return;
+        setCurrentImageIndex((prev) => (prev - 1 + room.images.length) % room.images.length);
+    };
+
+    return (
+        <div className="flex flex-col rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 bg-white group shadow-sm overflow-hidden">
+             <div className="h-48 relative group/image">
+                 <div 
+                    className="w-full h-full bg-cover bg-center transition-all duration-500" 
+                    style={{ backgroundImage: `url(${room.images[currentImageIndex]})` }}
+                 ></div>
+                 
+                 {room.images.length > 1 && (
+                     <>
+                        <button 
+                            onClick={prevImage}
+                            className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-1 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm"
+                            aria-label="Previous image"
+                        >
+                            <ChevronLeft className="w-5 h-5" />
+                        </button>
+                        <button 
+                            onClick={nextImage}
+                            className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white p-1 rounded-full opacity-0 group-hover/image:opacity-100 transition-opacity backdrop-blur-sm"
+                             aria-label="Next image"
+                        >
+                            <ChevronRight className="w-5 h-5" />
+                        </button>
+                     </>
+                 )}
+                 
+                 {/* Pagination dots - Always visible to indicate carousel structure */}
+                 <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1">
+                    {room.images.map((_, idx) => (
+                        <div 
+                            key={idx} 
+                            className={`w-1.5 h-1.5 rounded-full shadow-sm transition-colors ${idx === currentImageIndex ? 'bg-white' : 'bg-white/50'}`}
+                        />
+                    ))}
+                 </div>
+             </div>
+             
+             <div className="p-4 md:p-6 flex-1 flex flex-col">
+                <h3 className="text-base md:text-xl font-bold text-shadow mb-2 md:mb-3 font-serif">{room.title}</h3>
+                <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
+                    {room.description}
+                </p>
+                <div className="mt-auto space-y-2">
+                    {room.features.map((feature, i) => (
+                        <div key={i} className="flex items-center gap-2 text-xs md:text-sm text-gray-500">
+                            {feature.icon}
+                            <span>{feature.text}</span>
+                        </div>
+                    ))}
+                </div>
+             </div>
+        </div>
+    );
+};
 
 const Stay: React.FC = () => {
   const { t } = useLanguage();
 
-  const rooms = [
+  const rooms: Room[] = [
     {
       title: t('stay', 'types.suite.title'),
       description: t('stay', 'types.suite.desc'),
-      image: "https://images.unsplash.com/photo-1590490360182-c33d57733427?q=80&w=2574&auto=format&fit=crop",
+      images: ["/miel.jpg", "/inside.jpg", "/towel.jpg", "/bathroom.jpg"],
       features: [
         { icon: <BedDouble className="w-4 h-4 text-honey" />, text: t('stay', 'features.beds') },
         { icon: <Bath className="w-4 h-4 text-honey" />, text: t('stay', 'features.bath') },
@@ -21,7 +99,7 @@ const Stay: React.FC = () => {
     {
       title: t('stay', 'types.deluxe.title'),
       description: t('stay', 'types.deluxe.desc'),
-      image: "https://images.unsplash.com/photo-1616594039964-40891a91395b?q=80&w=2670&auto=format&fit=crop",
+      images: ["/deluxe.jpg"],
       features: [
         { icon: <BedDouble className="w-4 h-4 text-honey" />, text: t('stay', 'features.beds') },
         { icon: <Bath className="w-4 h-4 text-honey" />, text: t('stay', 'features.bath') },
@@ -32,7 +110,7 @@ const Stay: React.FC = () => {
     {
       title: t('stay', 'types.bungalow.title'),
       description: t('stay', 'types.bungalow.desc'),
-      image: "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?q=80&w=2670&auto=format&fit=crop",
+      images: ["/bungalow.jpg"],
       features: [
         { icon: <BedDouble className="w-4 h-4 text-honey" />, text: t('stay', 'features.beds') },
         { icon: <Bath className="w-4 h-4 text-honey" />, text: t('stay', 'features.bath') },
@@ -43,10 +121,11 @@ const Stay: React.FC = () => {
 
   return (
     <div 
-      className="min-h-screen bg-shadow relative"
+      className="min-h-screen bg-cover bg-center bg-fixed relative"
+      style={{ backgroundImage: "url('/stay.jpg')" }}
     >
        {/* Background Opacity Overlay - subtle texture to break up the solid color */}
-       <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+       <div className="absolute inset-0 bg-black/20 pointer-events-none"></div>
 
       {/* Main Content Wrapper */}
       <div className="relative z-10 pt-28 md:pt-32 pb-12 md:pb-24 px-4 sm:px-6 lg:px-8">
@@ -80,8 +159,8 @@ const Stay: React.FC = () => {
                             <p>{t('stay', 'loungeText')}</p>
                         </div>
                     </div>
-                    {/* Placeholder for lounge image */}
-                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=2574&auto=format&fit=crop')" }}>
+                    {/* Lounge image */}
+                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('/lounge.jpg')" }}>
                     </div>
                 </div>
             </div>
@@ -97,24 +176,7 @@ const Stay: React.FC = () => {
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {rooms.map((room, index) => (
-                        <div key={index} className="flex flex-col rounded-xl border border-gray-200 hover:shadow-xl transition-all duration-300 bg-white group shadow-sm overflow-hidden">
-                             <div className="h-48 bg-cover bg-center" style={{ backgroundImage: `url(${room.image})` }}></div>
-                             
-                             <div className="p-4 md:p-6 flex-1 flex flex-col">
-                                <h3 className="text-base md:text-xl font-bold text-shadow mb-2 md:mb-3 font-serif">{room.title}</h3>
-                                <p className="text-gray-600 text-xs md:text-sm leading-relaxed mb-4">
-                                    {room.description}
-                                </p>
-                                <div className="mt-auto space-y-2">
-                                    {room.features.map((feature, i) => (
-                                        <div key={i} className="flex items-center gap-2 text-xs md:text-sm text-gray-500">
-                                            {feature.icon}
-                                            <span>{feature.text}</span>
-                                        </div>
-                                    ))}
-                                </div>
-                             </div>
-                        </div>
+                        <RoomCard key={index} room={room} />
                     ))}
                 </div>
             </div>
