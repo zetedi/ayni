@@ -15,7 +15,7 @@ const Home: React.FC = () => {
           loop 
           muted 
           playsInline
-          className="absolute top-0 md:top-40 left-0 w-full h-full md:h-[73%] object-contain object-[center_73%] md:object-cover md:object-bottom"
+          className="absolute top-0 md:top-auto md:-bottom-24 left-0 w-full h-full md:h-[85%] object-contain object-[center_73%] md:object-cover md:object-bottom"
         >
           <source src="/puma.mp4" type="video/mp4" />
         </video>
