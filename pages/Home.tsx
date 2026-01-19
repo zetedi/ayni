@@ -5,19 +5,25 @@ import { ChevronDown } from 'lucide-react';
 const Home: React.FC = () => {
   const { t } = useLanguage();
   const [isExpanded, setIsExpanded] = useState(false);
+  
+  // Randomly select video on mount
+  const [videoSrc] = useState(() => {
+    return Math.random() < 0.5 ? '/puma.mp4' : '/colibri.mp4';
+  });
 
   return (
     <div className="min-h-screen relative flex items-start pt-32 md:pt-40 pb-12 md:pb-20 bg-black overflow-x-hidden">
       {/* Background Video */}
       <div className="fixed inset-0 z-0 bg-black">
         <video 
+          key={videoSrc}
           autoPlay 
           loop 
           muted 
           playsInline
           className="absolute left-0 w-full h-[calc(100%+2rem)] -bottom-8 object-contain object-bottom md:h-[150%] md:-top-[20%] md:bottom-auto md:object-cover md:object-center"
         >
-          <source src="/puma.mp4" type="video/mp4" />
+          <source src={videoSrc} type="video/mp4" />
         </video>
         {/* Overlay for text readability */}
         <div className="absolute inset-0 bg-black/40 pointer-events-none"></div>
