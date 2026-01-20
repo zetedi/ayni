@@ -69,9 +69,14 @@ const Home: React.FC = () => {
             </div>
 
             <div className="flex justify-start">
-                <button className="bg-honey text-shadow px-6 py-2 md:px-10 md:py-3 rounded-full font-serif font-black text-xs md:text-lg hover:bg-opacity-90 transition-all shadow-md border border-white/20 tracking-wide">
+                <a 
+                    href="https://chat.whatsapp.com/CW6tWSNF4zsCfaUntT49TA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="bg-honey text-shadow px-6 py-2 md:px-10 md:py-3 rounded-full font-serif font-black text-xs md:text-lg hover:bg-opacity-90 transition-all shadow-md border border-white/20 tracking-wide inline-block"
+                >
                     {t('hero', 'cta')}
-                </button>
+                </a>
             </div>
           </div>
 
