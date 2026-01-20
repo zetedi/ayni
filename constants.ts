@@ -145,13 +145,22 @@ export const TRANSLATIONS = {
         zonesTitle: 'Event Zones',
         zonesText: 'Experience the flow of energy across our dedicated spaces.',
         featured: {
-            tag: 'New Year\'s Eve',
-            title: 'Ecstatic Dance Festival',
-            subtitle: 'Featuring Liquid Bloom, Calagna, and many more.',
-            p1: 'Hosted at Ayni Sanctuary in Peru’s Sacred Valley, Casa de Oso presents an epic New Year’s Eve ecstatic dance festival featuring international artists, DJs, and musicians dedicated to community-centered celebration. As the hosting venue, Ayni Sanctuary is honored to hold this gathering in a safe, alcohol-free environment that supports free movement, genuine connection, and full self-expression.',
-            p2: 'The experience unfolds across two immersive dance floors — Condor Shala and Puma Hall — each offering a distinct sonic journey, alongside Ukhu Temple, an acoustic tea space for rest, warmth, and gentle sound. As music and movement carry us into the new year, we gather to celebrate renewal in a space rooted in care, creativity, and conscious community in the Sacred Valley of Peru.',
-            cta: 'Come as you are. Dance as you feel.',
-            btn: 'Tickets via Casa de Oso'
+            tag: 'Upcoming Gathering',
+            title: 'Ayni Powwow',
+            subtitle: 'The Second Annual Gathering',
+            p1: 'Join us for the second annual Ayni Powwow, a four-day gathering dedicated to the principle of sacred reciprocity. This immersive experience brings together wisdom keepers, artists, and community for days of weaving, presentations, workshops, and music.',
+            p2: 'Deepen your connection to the land and each other through shared ceremony, traditional crafts, and the celebration of living culture in the heart of the Sacred Valley.',
+            cta: 'Celebrate with us.',
+            btn: 'Register Now'
+        },
+        past: {
+            title: 'Past Events',
+            ecstatic: {
+                tag: 'New Year\'s Eve 2024',
+                title: 'Ecstatic Dance Festival',
+                subtitle: 'Featuring Liquid Bloom, Calagna & more.',
+                soldOut: 'Sold Out'
+            }
         },
         zones: {
             condor: { title: 'Condor Shala', desc: 'An immersive dance floor offering a distinct sonic journey elevating the spirit.' },
@@ -341,13 +350,22 @@ export const TRANSLATIONS = {
         zonesTitle: 'Zonas del Evento',
         zonesText: 'Experimenta el flujo de energía a través de nuestros espacios dedicados.',
         featured: {
-            tag: 'Año Nuevo',
-            title: 'Festival de Danza Extática',
-            subtitle: 'Con Liquid Bloom, Calagna y muchos más.',
-            p1: 'Organizado en el Santuario Ayni en el Valle Sagrado de Perú, Casa de Oso presenta un épico festival de danza extática de Nochevieja con artistas internacionales, DJs y músicos dedicados a la celebración centrada en la comunidad. Como sede anfitriona, Ayni Sanctuary tiene el honor de celebrar esta reunión en un ambiente seguro y libre de alcohol que apoya el movimiento libre, la conexión genuina y la plena autoexpresión.',
-            p2: 'La experiencia se desarrolla en dos pistas de baile inmersivas: Condor Shala y Puma Hall, cada una ofreciendo un viaje sonoro distinto, junto con el Templo Ukhu, un espacio acústico de té para el descanso, la calidez y el sonido suave. A medida que la música y el movimiento nos llevan al nuevo año, nos reunimos para celebrar la renovación en un espacio arraigado en el cuidado, la creatividad y la comunidad consciente en el Valle Sagrado de Perú.',
-            cta: 'Ven como eres. Baila como te sientes.',
-            btn: 'Entradas vía Casa de Oso'
+            tag: 'Próxima Reunión',
+            title: 'Ayni Powwow',
+            subtitle: 'El Segundo Encuentro Anual',
+            p1: 'Únase a nosotros para el segundo Ayni Powwow anual, una reunión de cuatro días dedicada al principio de la reciprocidad sagrada. Esta experiencia inmersiva reúne a guardianes de la sabiduría, artistas y la comunidad para días de tejido, presentaciones, talleres y música.',
+            p2: 'Profundice su conexión con la tierra y entre sí a través de ceremonias compartidas, artesanías tradicionales y la celebración de la cultura viva en el corazón del Valle Sagrado.',
+            cta: 'Celebra con nosotros.',
+            btn: 'Registrarse Ahora'
+        },
+        past: {
+            title: 'Eventos Pasados',
+            ecstatic: {
+                tag: 'Año Nuevo 2024',
+                title: 'Festival de Danza Extática',
+                subtitle: 'Con Liquid Bloom, Calagna y más.',
+                soldOut: 'Agotado'
+            }
         },
         zones: {
             condor: { title: 'Condor Shala', desc: 'Una pista de baile inmersiva que ofrece un viaje sonoro distinto elevando el espíritu.' },
@@ -537,13 +555,22 @@ export const TRANSLATIONS = {
         zonesTitle: 'Raymi Suyukuna',
         zonesText: 'Kawsay kallpata riqsiy kay suyukunapi.',
         featured: {
-            tag: 'Musuq Wata',
-            title: 'Tusuy Raymi',
-            subtitle: 'Liquid Bloom, Calagna, huk takiqkunawan.',
-            p1: 'Ayni Sanctuarypi, Valle Sagradopi, Casa de Oso rikuchin hatun Musuq Wata tusuy raymita. Kaypiqa allin takiqkuna, DJkuna ima hamunquku. Ayni Sanctuaryqa kay hatun huñunakuyta chaskikun sunquwan, mana machaywan, libre kawsaywan.',
-            p2: 'Iskay hatun tusuna wasi kanqa: Condor Shala, Puma Hall ima. Chaymanta Ukhu Temple kanqa, samana wasi, upyana wasi, qasi kayta tarinapaq. Takiwan tusuywan musuq wataman yaykusun.',
-            cta: 'Imayna kanki chay hina hamuy. Munayniyki hina tusuy.',
-            btn: 'Entradas Casa de Osopi'
+            tag: 'Hamuq Huñunakuy',
+            title: 'Ayni Powwow',
+            subtitle: 'Iskay Kaq Hatun Huñunakuy',
+            p1: 'Hamuy kay iskay kaq Ayni Powwowman, tawa p\'unchaw huñunakuy Ayni yuyaywan. Kaypiqa yachaqkuna, takiqkuna, ayllu ima huñunakunqa awanapaq, rimanakunapaq, yachachinakunapaq, takinapaq ima.',
+            p2: 'Allpawan, runamasinchikwan ima aswan allinta tinkuy, raymichay ima Valle Sagrado sunqunpi.',
+            cta: 'Raymichay ñuqaykuwan.',
+            btn: 'Yachay'
+        },
+        past: {
+            title: 'Ñawpaq Raymikuna',
+            ecstatic: {
+                tag: 'Musuq Wata 2024',
+                title: 'Tusuy Raymi',
+                subtitle: 'Liquid Bloom, Calagna, hukwan.',
+                soldOut: 'Tukusqa'
+            }
         },
         zones: {
             condor: { title: 'Condor Shala', desc: 'Tusuna wasi, sumaq takiwan nunanchikta uqarinapaq.' },

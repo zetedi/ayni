@@ -112,7 +112,7 @@ const Experience: React.FC = () => {
 
             {/* --- EVENTS SECTION --- */}
             
-            {/* Featured Event: New Year's */}
+            {/* Featured Event: Powwow */}
             <div className="p-5 md:p-8 lg:p-12">
                  <div className="text-center mb-6 md:mb-10">
                     <h2 className="text-lg md:text-3xl font-serif font-bold text-shadow mb-2 md:mb-4">{t('events', 'title')}</h2>
@@ -139,16 +139,43 @@ const Experience: React.FC = () => {
                             {t('events', 'featured.btn')}
                         </button>
                     </div>
-                    {/* Featured event image - bloom.png */}
-                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('/bloom.png')" }}>
+                    {/* Featured event image - powwow.jpg */}
+                    <div className="h-32 md:h-full min-h-[150px] md:min-h-auto bg-cover bg-center" style={{ backgroundImage: "url('/powwow.jpg')" }}>
                          <div className="w-full h-full bg-gradient-to-t from-shadow/80 to-transparent flex items-end p-8">
                          </div>
                     </div>
                 </div>
             </div>
 
-             {/* Event Zones Grid */}
+            {/* Past Events Section */}
             <div className="p-5 md:p-8 lg:p-12 bg-gray-50/50">
+                 <div className="text-center mb-6">
+                    <h3 className="text-xl md:text-2xl font-serif font-bold text-shadow text-gray-400 uppercase tracking-widest">{t('events', 'past.title')}</h3>
+                </div>
+                <div className="max-w-4xl mx-auto">
+                    <div className="relative rounded-xl overflow-hidden shadow-md bg-white border border-gray-200 flex flex-col sm:flex-row group">
+                         
+                         {/* Sold Out Badge */}
+                        <div className="absolute top-0 right-0 z-20">
+                            <div className="bg-oxblood text-white text-xs md:text-sm font-bold px-4 py-1 shadow-md uppercase tracking-wider">
+                                {t('events', 'past.ecstatic.soldOut')}
+                            </div>
+                        </div>
+
+                        <div className="sm:w-1/3 h-40 sm:h-auto bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" style={{ backgroundImage: "url('/bloom.png')" }}>
+                            <div className="absolute inset-0 bg-black/20"></div>
+                        </div>
+                        <div className="p-6 flex flex-col justify-center sm:w-2/3">
+                            <span className="text-xs font-bold text-gray-400 uppercase mb-1">{t('events', 'past.ecstatic.tag')}</span>
+                            <h4 className="text-lg md:text-xl font-bold text-shadow mb-1">{t('events', 'past.ecstatic.title')}</h4>
+                            <p className="text-sm text-honey font-medium">{t('events', 'past.ecstatic.subtitle')}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+             {/* Event Zones Grid */}
+            <div className="p-5 md:p-8 lg:p-12">
                 <div className="text-center mb-6 md:mb-10">
                     <h2 className="text-lg md:text-3xl font-serif font-bold text-shadow mb-2 md:mb-4">{t('events', 'zonesTitle')}</h2>
                     <p className="text-gray-600 font-medium max-w-2xl mx-auto text-xs md:text-base">{t('events', 'zonesText')}</p>
